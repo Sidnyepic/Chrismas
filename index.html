@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas, Sidney!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #d32f2f;
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        .christmas-tree {
+            font-size: 5em;
+            color: #4caf50;
+            margin: 20px 0;
+        }
+        .gift {
+            font-size: 3em;
+            color: #ff9800;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gift:hover {
+            transform: scale(1.2);
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="christmas-tree">🎄</div>
+        <h1>Merry Christmas, Sidney!</h1>
+        <p>
+            Wishing you a holiday season filled with love, peace, and happiness.  
+            Click the gift below for a special Christmas rule!
+        </p>
+        <div class="gift" onclick="showMessage()">🎁</div>
+        <div id="message">
+            Hello, Sidney! 🎅  
+            Remember, the rule of Christmas is to share love and joy with everyone around you!
+        </div>
+        <div class="footer">
+            &copy; 2024 Christmas Wishes
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
